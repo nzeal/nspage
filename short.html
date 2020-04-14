@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+	
+	<title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href ="css/style.css">
+
+</head>
+ 
+<body>
+	<section class = "banner" id = "sec">
+		<header class="header-section">
+
+				<div class="site-logo">
+					<h2><a href="index.html">Nitin Shukla</a></h2>
+				</div>
+			
+			<div id = "toggle" onclick="toggle()"></div>
+		</header>
+
+
+		<div class="resume-section spad">
+					<div class="section-title">
+						<h2>Short Bio</h2>
+						<h3>About me : </h3>  <p>I am HPC specilist at CINECA Bolonga, Italy. I have interest in high-performance computing. Moreover, I also explored numerical investigations of the kinetic behavior of astrophysical and laboratory plasmas.</p>
+					</div>
+					<br>
+					<ul class="resume-list">
+						<li>
+							<h2>2013-2019</h2>
+							<h3>Instituto Superior Técnico</h3>
+							<h4>Computational plasma physics</h4>
+							<p>During my Ph.D., I have gained extensive experience in numerical methods for particle in cell (PIC) simulations. My experience includes working in the area of collisionless shocks, particle acceleration in turbulent magnetic fields arising from plasma instabilities such as the Weibel/Current filamentation instability and by the Biermann battery mechanism.</p>
+						</li>
+						<li>
+							<h2>2008-2010</h2>
+							<h3>Instituto Superior Técnico</h3>
+							<h4>Mestrado Integrado em Engenharia Física Tecnológica</h4>
+							<p>Thesis title: Enhancement in the electromagnetic beam-plasma instability due to ion streaming</p>
+						</li>
+
+						<li>
+							<h2>2008-2010</h2>
+							<h3>Kashi Naresh College, Gyanpur</h3>
+							<h4>Bachelor of Science (BSc) in Physics</h4>
+						</li>
+
+					</ul>
+			
+	</div>
+
+	</section>
+
+
+<div id = "navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="short.html">Short Bio</a></li>
+			<li><a href="interest.html">Interests</a></li>
+			<li><a href="exp.html">Experiences</a></li>
+			<li><a href="blogs.html">Blogs</a></li>
+		</ul>	
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>	
+
+</body>
+
+</html>
